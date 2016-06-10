@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="120dp"
+    android:background="@drawable/image_bg">
+
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radiobutton_now"
+            android:layout_above="@+id/begin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+
+      //subject
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Very important !!"
+        android:paddingTop="@dimen/message_vertical_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2198dc"
+        android:layout_above="@+id/begin"
+        android:layout_toRightOf="@+id/list_image"
+        android:layout_toEndOf="@+id/list_image" />
+
+
+
+    // -- lab
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="Lab 5"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignTop="@+id/list_image_go"
+        android:layout_toRightOf="@+id/list_image" />
+
+
+   // year
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="3"
+        android:textSize="15sp"
+        android:textColor="#727272"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/place"
+        android:layout_alignStart="@+id/place" />
+
+// begin time
+    <TextView
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="12:45Pm"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="#2e5687"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/list_image_go"
+        android:layout_toStartOf="@+id/list_image_go"
+        android:gravity="center" />
+
+
+
+    // sec_num
+
+    <TextView
+        android:id="@+id/sec_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="#2e5687"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/begin"
+        android:layout_alignStart="@+id/begin" />
+
+
+    <ImageView
+        android:id="@+id/list_image_go"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:30"
+        android:textStyle="bold"
+        android:id="@+id/textViewtimer"
+        android:layout_alignBottom="@+id/begin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/group"
+        android:layout_alignTop="@+id/year"
+        android:layout_toRightOf="@+id/place" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textViewType"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_image"
+        android:layout_toEndOf="@+id/list_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textViewDoctor"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/begin"
+        android:layout_alignEnd="@+id/begin" />
+
+
+</RelativeLayout>

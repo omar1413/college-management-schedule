@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mno.mohamed_youssef.assistant_test.Assistant_Main_Activity">
+
+
+    <item
+        android:id="@+id/notifyAction"
+        android:icon="@drawable/notify"
+        android:title="notify"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/cancelAction"
+        android:icon="@drawable/cancel"
+        android:title="cancel"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget"/>
+</menu>

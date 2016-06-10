@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/image_bg">
+
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <ImageView
+        android:id="@+id/messageIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/link2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    //title
+    <TextView
+        android:id="@+id/titleNotificationStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:paddingTop="@dimen/message_vertical_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2198dc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+
+
+    // Description
+    <TextView
+        android:id="@+id/DescriptionStud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/messageIcon"
+        android:layout_toStartOf="@+id/messageIcon"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="Description"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/titleNotificationStud"
+        android:gravity="center" />
+
+
+    // subject
+    <TextView
+        android:id="@+id/subjectStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="subject"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="#2e5687"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/Doctor_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/Doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="Doctor name"
+        android:textSize="15sp"
+        android:textColor="#2e5687"
+        android:layout_below="@+id/DescriptionStud"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_vertical_padding"
+        android:text="link"
+        android:textSize="15sp"
+        android:textColor="#2e5687"
+        android:layout_below="@+id/Doctor_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

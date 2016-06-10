@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#366297</color>
+    <color name="colorPrimaryDark">#9EBEE5</color>
+    <color name="background">#102C4E</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#75579B</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="light_purple_button">#9ebee5</color>
+    <color name="pressed_purple_button">#366297</color>
+    <color name="focused_purple_button">#a6c4e7</color>
+    <color name="text_color_button">#304c73</color>
+    <color name="apptheme_color">#193455</color>
+
+
+
+</resources>

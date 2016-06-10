@@ -1,0 +1,116 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="@string/content_desc_background" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Create your Account"
+        android:layout_alignParentTop="true" />
+
+
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/usernameFieldsingup"
+            style="@style/AuthEditText"
+            android:hint="username" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordFieldsingup"
+            style="@style/AuthEditText"
+            android:hint="password "
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/emailFieldsingup"
+            style="@style/AuthEditText"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner">
+
+        </Spinner>
+    <LinearLayout
+        android:id="@+id/pictureLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_below="@id/emailFieldsingup"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:id="@+id/profilePicture" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Picture"
+
+            style="@style/AuthButton"
+
+            android:id="@+id/Camerabutton" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider"
+        android:contentDescription="@string/content_desc_button_divider"/>
+
+    <Button
+        android:id="@+id/signupBtn"
+        style="@style/AuthButton"
+        android:text="Create "
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toLeftOf="@id/buttonDivider"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        style="@style/AuthButton"
+        android:text="CANCEL"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toRightOf="@id/buttonDivider"
+        android:layout_marginLeft="0dp" />
+
+</RelativeLayout>
+
+
+
+
+
+
+

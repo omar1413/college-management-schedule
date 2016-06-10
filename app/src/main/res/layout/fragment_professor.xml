@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:id="@+id/baseLayout"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"
+        android:text="Professor" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthTitle.AuthSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter authication code"
+        />
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+android:layout_below="@+id/subtitle"
+        style="@style/AuthFieldContainer" >
+
+        <EditText
+            android:id="@+id/verifyDoctorpassword"
+            style="@style/AuthEditText"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/AuthButton"
+        android:text="Login"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLayout" />
+
+
+</RelativeLayout>

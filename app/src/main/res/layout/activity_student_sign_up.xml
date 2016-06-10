@@ -1,0 +1,127 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="@string/content_desc_background" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Create your Account"
+        android:layout_alignParentTop="true" />
+
+
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/AuthEditText"
+            android:hint="Full name "
+            android:padding="20dp">
+
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/phone"
+            android:hint="phone "
+            android:inputType="phone"
+            style="@style/AuthEditText"
+            android:padding="20dp" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_year"
+            android:prompt="@string/Selection_year"
+            android:padding="15dp"
+            android:outlineProvider="background"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center">
+
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_group"
+            android:padding="15dp"
+            android:outlineProvider="background"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center">
+
+        </Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_Section"
+            android:padding="15dp"
+            android:outlineProvider="background"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center">
+
+        </Spinner>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider"
+        android:contentDescription="@string/content_desc_button_divider"/>
+
+    <Button
+        android:id="@+id/creatStudent"
+        style="@style/AuthButton"
+        android:text="Create "
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toLeftOf="@id/buttonDivider"
+        android:layout_marginRight="0dp"
+        android:onClick="go" />
+
+    <Button
+        android:id="@+id/cancelStud"
+        style="@style/AuthButton"
+        android:text="CANCEL"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toRightOf="@id/buttonDivider"
+        android:layout_marginLeft="0dp" />
+
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AuthBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="content_desc_background" />
+
+
+
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:src="@drawable/logo" />
+
+
+
+
+
+</RelativeLayout>
